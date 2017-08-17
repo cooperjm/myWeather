@@ -13,7 +13,6 @@ $(document).ready(function() {
 
     getWeatherCondition(lat, lon);
     $('#temperature').addClass('animated tada');
-    //console.log(lat, lon);
   });
 
   $('#temperature').on('click', function() {
@@ -36,8 +35,6 @@ $(document).ready(function() {
 });
 
 //Plugs in lat and lon to API, retrieves and fills in data to the page
-
-
 function getWeatherCondition(lat, lon) {
   $.getJSON(weather + lat + '&' + lon, function(weatherData){
 
